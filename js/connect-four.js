@@ -1,14 +1,10 @@
-/**
- * Minimax Implementation 
- * @plain javascript version
- */
 function Game() {
     this.rows = 6; // Height
     this.columns = 7; // Width
     this.status = 0; // 0: running, 1: won, 2: lost, 3: tie
     this.depth = 4; // Search depth
     this.score = 100000, // Win/loss score
-    this.round = 0; // 0: Human, 1: Computer
+    this.round = 0; // 0 : Human, 1 : Computer
     this.winning_array = []; // Winning (chips) array
     this.iterations = 0; // Iteration count
     
@@ -122,8 +118,8 @@ Game.prototype.generateComputerDecision = function() {
 }
 
 /**
- * Algorithm
- * Minimax principle
+ * 
+ * Minimax algorithm
  */
 Game.prototype.maximizePlay = function(board, depth) {
     // Call score of our board

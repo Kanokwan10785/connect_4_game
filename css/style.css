@@ -164,7 +164,7 @@ h1 {
 }
 
 .box-right {
-    margin: 20px 10px 10px 0;
+    margin: 20px 10px 10px 10px;
     float: left;
 }
 
